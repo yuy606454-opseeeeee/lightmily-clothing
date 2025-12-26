@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightmily Club - Premium Local Clothing</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1><i class="fas fa-crown"></i> Lightmily Club</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="dashboard/index.html" class="dashboard-btn">Dashboard</a></li>
+                <li><a href="#cart" class="cart-btn"><i class="fas fa-shopping-cart"></i> <span
+                            id="cart-count">0</span></a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h2>Elevate Your Style</h2>
+            <p>Premium local clothing crafted with passion and attention to detail</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Our Collection</h2>
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be loaded here dynamically -->
+                <div class="loading">Loading products...</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section-title">About Lightmily Club</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Lightmily Club is a local clothing brand dedicated to creating high-quality, stylish apparel that
+                        reflects the spirit of our community. Each piece is carefully designed and crafted to ensure
+                        comfort, durability, and timeless style.</p>
+                    <p>Our mission is to provide premium clothing while supporting local artisans and sustainable
+                        practices.</p>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3><i class="fas fa-store"></i> Visit Our Store</h3>
+                    <p>123 Fashion Street, Style City</p>
+                    <p>Open: Mon-Sat 10am-8pm</p>
+
+                    <h3><i class="fas fa-phone"></i> Call Us</h3>
+                    <p>(555) 123-4567</p>
+
+                    <h3><i class="fas fa-envelope"></i> Email</h3>
+                    <p>info@lightmilyclub.com</p>
+                </div>
+                <div class="contact-form">
+                    <h3>Send Message</h3>
+                    <form id="contact-form">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+            <div class="cart-header">
+                <h3>Your Cart</h3>
+                <span class="close-cart">&times;</span>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items will appear here -->
+                <p class="empty-cart">Your cart is empty</p>
+            </div>
+            <div class="cart-footer">
+                <p>Total: $<span id="cart-total">0.00</span></p>
+                <button class="btn checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2><i class="fas fa-crown"></i> Lightmily Club</h2>
+                    <p>Premium Local Clothing</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <p class="copyright">&copy; 2023 Lightmily Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
